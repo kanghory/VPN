@@ -8,7 +8,7 @@ apt install python -y
 wget -O /usr/local/bin/edu-proxy https://raw.githubusercontent.com/kanghory/websocket/main/openssh.py && chmod +x /usr/local/bin/edu-proxy
 
 wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/kanghory/VPN/main/Insshws/dropbear-ws.py.txt
-wget -O /usr/local/bin/ws-stunnel http://sgpx.cybervpn.site:81/Autoscript-by-azi-main/Insshws/ws-stunnel.txt
+wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/kanghory/VPN/main/Insshws/ws-stunnel.txt
 #wget -O /usr/local/bin/edu-proxyovpn https://gitlab.com/hidessh/baru/-/raw/main/websocket-python/baru/ovpn.py && chmod +x /usr/local/bin/edu-proxyovpn
 
 #izin permision
