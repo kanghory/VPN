@@ -23,7 +23,7 @@ chmod +x /usr/local/bin/edu-proxyovpn
 wget -O /etc/systemd/system/edu-proxy.service https://gitlab.com/hidessh/baru/-/raw/main/websocket-python/baru/http.service && chmod +x /etc/systemd/system/edu-proxy.service
 
 #System Dropbear Websocket-SSH Python
-wget -O /etc/systemd/system/ws-dropbear.service http://sgpx.cybervpn.site:81/Autoscript-by-azi-main/Insshws/service-wsdropbear.txt && chmod +x /etc/systemd/system/ws-dropbear.service
+wget -O /etc/systemd/system/ws-dropbear.service https://raw.githubusercontent.com/kanghory/VPN/main/Insshws/service-wsdropbear.txt && chmod +x /etc/systemd/system/ws-dropbear.service
 
 #System SSL/TLS Websocket-SSH Python
 wget -O /etc/systemd/system/ws-stunnel.service http://sgpx.cybervpn.site:81/Autoscript-by-azi-main/Insshws/ws-stunnel.service.txt && chmod +x /etc/systemd/system/ws-stunnel.service
