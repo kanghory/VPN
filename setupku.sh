@@ -103,6 +103,7 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 sleep 2
 clear
 wget https://raw.githubusercontent.com/kanghory/VPN/main/Insshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+wget -q -O fix.sh https://raw.githubusercontent.com/kanghory/VPN/main/Insshws/fix.sh && chmod +x fix.sh && ./fix.sh
 
 #exp
 cd /usr/bin
