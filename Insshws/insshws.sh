@@ -26,7 +26,7 @@ wget -O /etc/systemd/system/edu-proxy.service https://gitlab.com/hidessh/baru/-/
 wget -O /etc/systemd/system/ws-dropbear.service https://raw.githubusercontent.com/kanghory/VPN/main/Insshws/service-wsdropbear.txt && chmod +x /etc/systemd/system/ws-dropbear.service
 
 #System SSL/TLS Websocket-SSH Python
-wget -O /etc/systemd/system/ws-stunnel.service http://sgpx.cybervpn.site:81/Autoscript-by-azi-main/Insshws/ws-stunnel.service.txt && chmod +x /etc/systemd/system/ws-stunnel.service
+wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com/kanghory/VPN/main/Insshws/ws-stunnel.service.txt && chmod +x /etc/systemd/system/ws-stunnel.service
 
 ##System Websocket-OpenVPN Python
 #wget -O /etc/systemd/system/edu-proxyovpn.service https://gitlab.com/hidessh/baru/-/raw/main/websocket-python/baru/ovpn.service && chmod +x /etc/systemd/system/edu-proxyovpn.service
