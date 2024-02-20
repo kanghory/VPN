@@ -11,8 +11,8 @@ PASS = ''
 # CONST
 BUFLEN = 4096 * 4
 TIMEOUT = 60
-DEFAULT_HOST = '127.0.0.1:22'
-RESPONSE = 'HTTP/1.1 101 HELLO\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: yes\r\n\r\n'
+DEFAULT_HOST = '127.0.0.1:69'
+RESPONSE = 'HTTP/1.1 101 \nUpgrade: websocket \nConnection: Upgrade Sec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ== \nSec-WebSocket-Version: 13\nConnection: Keep-Alive\r\n\r\n'
 
 class Server(threading.Thread):
     def __init__(self, host, port):
