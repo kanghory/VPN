@@ -48,8 +48,8 @@ echo -e "${GREEN}Mohon Menunggu, Proses Backup sedang berlangsung !!${NC}"
 
 # ==========================================
 # Proses Backup
-BACKUP_DIR="/root/backup"
-BACKUP_FILE="/root/$IP-$DATE.zip"
+BACKUP_DIR="/backup"
+BACKUP_FILE="/$IP-$DATE.zip"
 
 rm -rf "$BACKUP_DIR"
 mkdir -p "$BACKUP_DIR"
