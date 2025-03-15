@@ -1,7 +1,7 @@
 #!/bin/bash
 # Autobackup Script - Membuat Jadwal Backup via crontab
 
-BACKUP_SCRIPT="/usr/bin/backup.sh"
+BACKUP_SCRIPT="/usr/bin/backup"
 
 # Pastikan skrip backup ada
 if [[ ! -f "$BACKUP_SCRIPT" ]]; then
@@ -12,13 +12,17 @@ fi
 echo "=================================="
 echo "  Auto Backup Scheduler"
 echo "=================================="
+echo "Jadwal backup saat ini:"
+crontab -l | grep "$BACKUP_SCRIPT" || echo "Tidak ada jadwal backup yang ditemukan."
+echo "=================================="
 echo "1) Setiap 1 Jam"
 echo "2) Setiap 6 Jam"
 echo "3) Setiap 12 Jam"
 echo "4) Setiap 24 Jam (Harian)"
 echo "5) Hapus Jadwal Backup"
+echo "6) Cek Jadwal Backup"
 echo "=================================="
-read -rp "Pilih opsi (1-5): " pilihan
+read -rp "Pilih opsi (1-6): " pilihan
 
 case "$pilihan" in
     1)
@@ -36,6 +40,13 @@ case "$pilihan" in
     5)
         crontab -l | grep -v "$BACKUP_SCRIPT" | crontab -
         echo "Jadwal backup dihapus."
+        exit 0
+        ;;
+    6)
+        echo "=================================="
+        echo "Jadwal Backup di Crontab:"
+        crontab -l | grep "$BACKUP_SCRIPT" || echo "Tidak ada jadwal backup yang ditemukan."
+        echo "=================================="
         exit 0
         ;;
     *)
